@@ -1,0 +1,7 @@
+<h3> Book Show </h3>
+<% @book %>
+Book Name:<%= @book.name %><br>
+Book Author:<%= @book.author %><br>
+Price:<%= @book.price %>
+
+

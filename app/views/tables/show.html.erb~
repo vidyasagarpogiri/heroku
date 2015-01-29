@@ -1,0 +1,5 @@
+<h3> Tables Show</h3>
+
+Table Model:<%= @table.model%>
+Table Brand:<%= @table.brand%>
+Table Price:<%= @table.price%>

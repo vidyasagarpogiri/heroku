@@ -1,0 +1,18 @@
+<table>
+<tr>
+<td>Product</td>
+<td>brand </td>
+<td>Price </td>
+</tr>
+<tr>
+<td><%= @shop.product %></td>
+<td><%= @shop.brand %></td>
+<td><%= @shop.price %></td>
+</tr>
+</table>
+<%= link_to "Back",shops_path %>  <%= link_to "New Shop",new_shop_path %> </td>
+
+
+
+
+

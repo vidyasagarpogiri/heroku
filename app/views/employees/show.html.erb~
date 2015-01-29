@@ -1,0 +1,9 @@
+<h3> Employee Show </h3>
+
+
+Emp Id:<%= @employee.empid %><br>
+Name:<%= @employee.name %><br>
+Salary: <%= @employee.salary %><br>
+
+<%= link_to "Back",employees_path %>
+

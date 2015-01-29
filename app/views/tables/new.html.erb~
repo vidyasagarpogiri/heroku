@@ -1,0 +1,7 @@
+<%= form_for @table do |tab|%>
+Model Name:<%=tab.text_field:model%><br>
+Model Brand:<%=tab.text_field:brand%><br>
+Model Price:<%=tab.text_field:price%>
+
+<%=tab.submit "SUBMIT"%>
+<%end%>

@@ -1,0 +1,10 @@
+<h3> New Employee </h3>
+
+<%= form_for @employee do |emp|%>
+
+Emp Id:<%= emp.text_field :empid %><br>
+Name:<%= emp.text_field :name %><br>
+Salary:<%= emp.text_field :salary %><br>
+
+<%= emp.submit %>
+<% end %>

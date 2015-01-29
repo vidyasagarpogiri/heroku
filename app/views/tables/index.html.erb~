@@ -1,0 +1,21 @@
+<h3> Tables List </h3>
+<h4> <%= link_to "New Table",new_table_path %> </h4>
+<table>
+<tr>
+<td>Model</td>
+<td> Brand </td>
+<td> Price </td>
+<td> Actions </td>
+</tr>
+<% @tables.each do |tab| %>
+<tr>
+<td><%= tab.model %></td>
+<td><%= tab.brand %></td>
+<td><%= tab.price %></td>
+<td><%= link_to "Show",table_path(tab.id) %><%= link_to "Edit",edit_table_path(tab.id) %> <%= link_to "Delete",table_path(tab.id),method: :delete, data: {confirm: "sure"}%> </td>
+</tr>
+
+<% end %>
+
+</table>
+

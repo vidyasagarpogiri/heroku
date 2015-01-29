@@ -1,0 +1,16 @@
+<h3> Books List <h3>
+<%= link_to "New Book",new_book_path %>
+<table>
+<tr><td>Book Name</td>
+<td>Book Author </td>
+<td>Price  </td>
+<td>Actions  </td></tr></hr>
+<% @books.each do |b|%>
+<tr><td><%=b.name %></td>
+<td><%= b.author %></td>
+<td><%= b.price %>
+<td><%= link_to "Show",book_path(b.id)%> <%= link_to "Update",edit_book_path(b.id)%> <%= link_to "Delete",book_path(b.id),method: :delete,data: {confirm: "sure"} %> <td></tr>
+<% end %>
+
+
+</table>

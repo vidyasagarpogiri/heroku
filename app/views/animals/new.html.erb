@@ -1,0 +1,9 @@
+<%= form_for @animal do |an|%>
+
+Animal Name:<%=an.text_field :name %> <br>
+Zoo Name:<%=an.text_field :zoo %>
+<br>
+<%= an.submit "Create" %>
+
+<% end %>
+

@@ -1,0 +1,19 @@
+<table>
+<%=link_to "New Shop",new_shop_path %><hr>
+<tr>
+<td>Product</td>
+<td>brand </td>
+<td>Price </td>
+<td>Actions</td>
+</tr>
+<% @shop.each do |shop|%>
+<tr>
+<td><%= shop.product %></td>
+<td><%= shop.brand %></td>
+<td><%= shop.price %></td>
+<td><%= link_to "Show",shop_path(shop.id)%> <%= link_to "Edit",edit_shop_path(shop.id) %> <%= link_to "Delete",shop_path(shop.id),method: :delete, data:{confirm: "sure"} %></td>
+</tr>
+
+<% end %>
+
+</table>

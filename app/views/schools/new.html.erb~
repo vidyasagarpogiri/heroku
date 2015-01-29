@@ -1,0 +1,9 @@
+<h3>School New Page</h3>
+<%= form_for @school do |sc|%>
+
+School Name:<%= sc.text_field :name %><br>
+Section:<%= sc.text_field :section %><br>
+Roll Number:<%= sc.text_field :rollnumber %><br>
+
+<%= sc.submit %>
+<% end %>

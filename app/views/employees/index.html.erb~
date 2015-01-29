@@ -1,0 +1,24 @@
+<h3>Employees List </h3>
+
+<%= link_to "New Employee", new_employee_path %>
+
+<table>
+<tr>
+<td> Employee Id </td>
+<td> Name </td>
+<td> Salary </td>
+<td> Actions </td>
+</tr>
+
+<% @employees.each do |emp|%>
+<tr>
+<td><%= emp.empid %></td>
+<td><%= emp.name%></td>
+<td><%= emp.salary%></td>
+<td><%= link_to "Show",employee_path(emp.id)%></td>
+<td><%= link_to "Edit",edit_employee_path(emp.id)%></td>
+<td><%= link_to "Delete",employee_path(emp.id),method: :delete,data: {confirm: "sure"}%></td>
+
+<% end %>
+
+</table>

@@ -1,0 +1,10 @@
+<h3> Edit Shop Details</h3>
+
+<%= form_for @shop do |s| %>
+Product Name:<%= s.text_field :product%><br>
+Brand Name:<%= s.text_field :brand%><br>
+Price:<%= s.text_field :price%><br>
+<%=s.submit "Update"%>
+<% end %>
+
+

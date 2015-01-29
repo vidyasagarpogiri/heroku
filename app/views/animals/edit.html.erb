@@ -1,0 +1,11 @@
+<h3> Update Animal </h3>
+
+<%= form_for @animal do |an|%>
+
+Animal Name:<%=an.text_field :name %> <br>
+Zoo Name:<%=an.text_field :zoo %>
+<br>
+<%= an.submit %>
+
+<% end %>
+

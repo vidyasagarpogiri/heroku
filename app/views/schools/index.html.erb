@@ -1,0 +1,21 @@
+Schools List
+
+<%= link_to "New School",new_school_path %>
+<table>
+<tr> <td>name</td>
+<td> section </td>
+<td>roll number </td>
+<td> Actions</td>
+</tr>
+<% @schools.each do |school| %>
+<tr>
+<td><%= school.name %></td>
+<td><%= school.section %></td>
+<td><%= school.rollnumber %></td> 
+<td><%= link_to "show", school_path(school.id) %> <%= link_to "update", edit_school_path(school.id) %> <%= link_to "delete",school_path(school.id),method: :delete, data: {confirm: "yes"}%>
+</tr>
+
+
+<% end %>
+
+</table>

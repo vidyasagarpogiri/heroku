@@ -1,0 +1,2 @@
+<h3> Book Update <h3>
+<%= render 'form' %>

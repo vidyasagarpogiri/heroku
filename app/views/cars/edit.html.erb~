@@ -1,0 +1,13 @@
+<%=form_for @car do |car| %>
+
+Name:<%= car.text_field :name%><br>
+
+Brand:<%= car.text_field :brand%><br>
+
+Colour :<%=car.text_field :colour %><br>
+
+<%= car.submit %>
+
+<% end %>
+
+

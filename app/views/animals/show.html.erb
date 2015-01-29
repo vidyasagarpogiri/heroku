@@ -1,0 +1,16 @@
+Animal Details Show Page
+
+<table>
+<tr><td>Animal Name<td>
+<td> Zoo </td>
+<td> Actions</td>
+</tr>
+<tr>
+<td><%= @animal.name %></td>
+<td><%= @animal.zoo %></td> </tr>
+
+
+</table>
+<%= link_to "Back",animals_path %> 
+<%= link_to "New Animal",new_animal_path %>
+
